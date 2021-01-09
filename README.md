@@ -8,16 +8,20 @@
 
 - [2020-01-05](Project_Record/01_05.md)
 - [2020-01-06](Project_Record/01_06.md)
+- [2020-01-07](Project_Record/01_07.md)
 
 ---
 
-### 💡 [자료모음](Project_Record/0자료모음.md)
+### 💡 [자료모음](Project_Record/자료모음.md)
+
+### 💡 [홈페이지자료](Project_Record/홈페이지자료.md)
 
 ---
 
 ### 기타 정보
 
-- 종강일: 2021-02-02
+- 종강일: 2021-01-28
+  > 시간이...ㅠㅠ
 
 ---
 
