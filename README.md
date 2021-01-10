@@ -13,9 +13,9 @@
 
 ---
 
-### 💡 [자료모음](Project_Record/자료모음.md)
+### 💡 [자료모음](Repository/자료모음.md)
 
-### 💡 [홈페이지자료](Project_Record/홈페이지자료.md)
+### 💡 [홈페이지자료](Repository/홈페이지자료.md)
 
 ---
 
