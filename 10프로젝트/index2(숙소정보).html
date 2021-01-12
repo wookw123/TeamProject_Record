@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <style>
+        /* ========객실======== */
+        .room {
+            padding: 20px 20px 20px 330px;
+            border: 1px solid #ddd;
+            position: relative;
+            margin-bottom: 20px;
+        }
+
+        .room-img {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+        }
+
+        .room-content {
+            overflow: hidden;
+        }
+
+        .room-content>.left {
+            float: left;
+            width: 50%;
+            box-sizing: border-box;
+            padding: 10px;
+
+        }
+
+        .room-content>.right {
+            float: right;
+            width: 50%;
+            box-sizing: border-box;
+        }
+
+        .room-content>.left>.reserve {
+            text-align: right;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 10px;
+        }
+
+        .re-time {
+            overflow: hidden;
+        }
+
+        .re-time>.left {
+            float: left;
+        }
+
+        .re-time>.right {
+            float: right;
+        }
+
+        .re-time span {
+            display: block;
+            padding-bottom: 3px;
+        }
+        /* =========슬라이드========== */
+        .img-slide{
+           
+            padding: 40px;
+            border-bottom: 1px solid #ddd;
+        }
+        .guest-info .info-right,.info-left{
+            height: 200px;
+            border: 1px solid #ddd;
+        }
+        #myCarousel{
+            width: 80%;
+        }
+
+
+
+        /* ========리뷰======== */
+        .review ul,
+        li {
+            list-style: none;
+        }
+
+        .score-top {
+            text-align: center;
+            padding: 30px 0;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .pic {
+            padding: 20px 20px 20px 100px;
+            position: relative;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .pic .img {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+        }
+        .writer{
+            margin: 0 auto;
+            width: 40%;
+            text-align: center;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="container">
+        <h2>Dynamic Tabs</h2>
+        <p>To make the tabs toggleable, add the data-toggle="tab" attribute to each link. Then add a .tab-pane class
+            with a unique ID for every tab and wrap them inside a div element with class .tab-content.</p>
+
+        <ul class="nav nav-tabs">
+            <li class="active"><a data-toggle="tab" href="#home">객실</a></li>
+            <li><a data-toggle="tab" href="#menu1">숙소정보</a></li>
+            <li><a data-toggle="tab" href="#menu2">리뷰</a></li>
+
+        </ul>
+
+        <div class="tab-content">
+            <div id="home" class="tab-pane fade in active">
+                <div class="room">
+                    <div class="room-img">
+                        <img src="디럭스.jpg" width="300px">
+                    </div>
+                    <div>
+                        <strong>스탠다드</strong>
+                    </div>
+                    <div class="room-content">
+                        <div class="left" style="border-right: 1px solid #7777;">
+                            <p>대실</p>
+                            <div class="reserve">
+                                <span>예약</span>
+                                <b style="color: red;">20000원</b>
+                            </div>
+                            <div class="re-time">
+                                <div class="left">
+                                    <span>마감시간</span>
+                                    <span>이용시간</span>
+                                </div>
+                                <div class="right">
+                                    <span>22시까지</span>
+                                    <span>8시간</span>
+                                </div>
+                            </div>
+                            <div>
+                                <button type="button" class="btn btn-danger" style="width: 100%;">예약하기</button>
+                            </div>
+                        </div>
+                        <div class="left">
+                            <p>숙박</p>
+                            <div class="reserve">
+                                <span>예약</span>
+                                <b style="color: red;">20000원</b>
+                            </div>
+                            <div class="re-time">
+                                <div class="left">
+                                    <span>마감시간</span>
+                                    <span>이용시간</span>
+                                </div>
+                                <div class="right">
+                                    <span>22시까지</span>
+                                    <span>8시간</span>
+                                </div>
+                            </div>
+                            <div>
+                                <button type="button" class="btn btn-danger" style="width: 100%;">예약하기</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="room">
+                    <div class="room-img">
+                        <img src="디럭스.jpg" width="300px">
+                    </div>
+                    <div>
+                        <strong>스탠다드</strong>
+                    </div>
+                    <div class="room-content">
+                        <div class="left" style="border-right: 1px solid #7777;">
+                            <p>대실</p>
+                            <div class="reserve">
+                                <span>예약</span>
+                                <b style="color: red;">20000원</b>
+                            </div>
+                            <div class="re-time">
+                                <div class="left">
+                                    <span>마감시간</span>
+                                    <span>이용시간</span>
+                                </div>
+                                <div class="right">
+                                    <span>22시까지</span>
+                                    <span>8시간</span>
+                                </div>
+                            </div>
+                            <div>
+                                <button type="button" class="btn btn-danger" style="width: 100%;">예약하기</button>
+                            </div>
+                        </div>
+                        <div class="left">
+                            <p>숙박</p>
+                            <div class="reserve">
+                                <span>예약</span>
+                                <b style="color: red;">20000원</b>
+                            </div>
+                            <div class="re-time">
+                                <div class="left">
+                                    <span>마감시간</span>
+                                    <span>이용시간</span>
+                                </div>
+                                <div class="right">
+                                    <span>22시까지</span>
+                                    <span>8시간</span>
+                                </div>
+                            </div>
+                            <div>
+                                <button type="button" class="btn btn-danger" style="width: 100%;">예약하기</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="room">
+                    <div class="room-img">
+                        <img src="디럭스.jpg" width="300px">
+                    </div>
+                    <div>
+                        <strong>스탠다드</strong>
+                    </div>
+                    <div class="room-content">
+                        <div class="left" style="border-right: 1px solid #7777;">
+                            <p>대실</p>
+                            <div class="reserve">
+                                <span>예약</span>
+                                <b style="color: red;">20000원</b>
+                            </div>
+                            <div class="re-time">
+                                <div class="left">
+                                    <span>마감시간</span>
+                                    <span>이용시간</span>
+                                </div>
+                                <div class="right">
+                                    <span>22시까지</span>
+                                    <span>8시간</span>
+                                </div>
+                            </div>
+                            <div>
+                                <button type="button" class="btn btn-danger" style="width: 100%;">예약하기</button>
+                            </div>
+                        </div>
+                        <div class="left">
+                            <p>숙박</p>
+                            <div class="reserve">
+                                <span>예약</span>
+                                <b style="color: red;">20000원</b>
+                            </div>
+                            <div class="re-time">
+                                <div class="left">
+                                    <span>마감시간</span>
+                                    <span>이용시간</span>
+                                </div>
+                                <div class="right">
+                                    <span>22시까지</span>
+                                    <span>8시간</span>
+                                </div>
+                            </div>
+                            <div>
+                                <button type="button" class="btn btn-danger" style="width: 100%;">예약하기</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div id="menu1" class="tab-pane fade">
+
+                <div class="img-slide">
+                    <div class="container">
+                        
+                        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                            <!-- Indicators -->
+                            <ol class="carousel-indicators">
+                                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                                <li data-target="#myCarousel" data-slide-to="1"></li>
+                                <li data-target="#myCarousel" data-slide-to="2"></li>
+                            </ol>
+
+                            <!-- Wrapper for slides -->
+                            <div class="carousel-inner">
+                                <div class="item active">
+                                    <img src="디럭스커플.jpg" style="width:100%;">
+                                </div>
+
+                                <div class="item">
+                                    <img src="디럭스.jpg"  style="width:100%; ">
+                                </div>
+
+                                <div class="item">
+                                    <img src="스탠다드.jpg" style="width:100%; ">
+                                </div>
+                            </div>
+
+                            <!-- Left and right controls -->
+                            <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                                <span class="glyphicon glyphicon-chevron-left"></span>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                                <span class="glyphicon glyphicon-chevron-right"></span>
+                                <span class="sr-only">Next</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container guest-info">
+                    <div class="row">
+                        <div class="col-sm-6 info-right">
+                            오시는길
+                        </div>
+                        <div class="col-sm-6 info-left">
+                            지도
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+
+            <div id="menu2" class="tab-pane fade">
+                <div class="review">
+                    <div class="score-top">
+                        <strong style="padding-bottom: 10px;">추천해요</strong>
+
+                        <div class="score-wrap">
+                            <div class="score-star star-45"></div>
+                            <div class="num">9.0</div>
+                        </div>
+                        <p>전체리뷰:333</p>
+                    </div>
+
+                    <ul style="padding: 0;">
+                        <li class="pic">
+                            <div class="img">
+                                <img src="human.png" alt="">
+                            </div>
+                            <p>
+                                <strong>제목</strong>
+                            </p>
+                            <div class="score-wrap">
+                                <div class="score-star star-45"></div>
+                                <div class="num">9.0</div>
+                            </div>
+                            <div class="name">
+                                <b>스탠다드 객실이용고객.</b>
+                                <strong>회원id</strong>
+                            </div>
+                            <div class="txt">
+                                객실이너무좋네요.객실이너무좋네요.객실이너무좋네요.객실이너무좋네요.객실이너무좋네요.객실이너무좋네요.
+                            </div>
+                            <div class="date">
+                                <span>2시간전</span>
+                            </div>
+                        </li>
+                        <li class="pic">
+                            <div class="img">
+                                <img src="human.png" alt="">
+                            </div>
+                            <p>
+                                <strong>제목</strong>
+                            </p>
+                            <div class="score-wrap">
+                                <div class="score-star star-45"></div>
+                                <div class="num">9.0</div>
+                            </div>
+                            <div class="name">
+                                <b>스탠다드 객실이용고객.</b>
+                                <strong>회원id</strong>
+                            </div>
+                            <div class="txt">
+                                객실이너무좋네요.객실이너무좋네요.객실이너무좋네요.객실이너무좋네요.객실이너무좋네요.객실이너무좋네요.
+                            </div>
+                            <div class="date">
+                                <span>2시간전</span>
+                            </div>
+                        </li>
+                        <li class="pic">
+                            <div class="img">
+                                <img src="human.png" alt="">
+                            </div>
+                            <p>
+                                <strong>제목</strong>
+                            </p>
+                            <div class="score-wrap">
+                                <div class="score-star star-45"></div>
+                                <div class="num">9.0</div>
+                            </div>
+                            <div class="name">
+                                <b>스탠다드 객실이용고객.</b>
+                                <strong>회원id</strong>
+                            </div>
+                            <div class="txt">
+                                객실이너무좋네요.객실이너무좋네요.객실이너무좋네요.객실이너무좋네요.객실이너무좋네요.객실이너무좋네요.
+                            </div>
+                            <div class="date">
+                                <span>2시간전</span>
+                            </div>
+                        </li>
+
+
+                    </ul>
+                </div>
+                <div class="writer">
+                    <button type="button" class="btn btn-danger" style="width: 100%;">리뷰쓰기</button>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+
+</body>
+
+</html>
