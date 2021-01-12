@@ -1,0 +1,46 @@
+/* 헤더 푸터 구분 */
+.my-header,
+.my-footer {
+  background-color: rgb(233, 226, 214);
+  text-align: center;
+}
+
+/* ========================================= */
+/* join.html */
+.form-controller {
+  width: 100%;
+}
+
+.title-box {
+  width: 250px;
+  margin: 35px auto;
+  text-align: center;
+  border-top: 1px solid #e1e1e1;
+  border-bottom: 1px solid #e1e1e1;
+
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-size: x-large;
+}
+
+.join-form {
+  margin: 0 auto;
+  /* class관련 클래스가 float를 가지고 있어서
+        col에 float를 none으로 설정 */
+  float: none;
+}
+
+.join-form form {
+  border: 1px solid#777;
+  /* 테두리 둥글기 */
+  border-radius: 10px;
+  padding: 30px;
+  box-shadow: 0px 10px 16px rgba(80, 80, 80, 0.753);
+}
+
+/* 모바일 환경 */
+@media (max-width: 760px) {
+  .join-form {
+    padding: 50px 10px;
+  }
+}

@@ -7,11 +7,14 @@
 ### 🚀 회의 기록
 
 - [2020-01-05](Project_Record/01_05.md)
+  > 최초 회의진행
 - [2020-01-06](Project_Record/01_06.md)
 - [2020-01-07](Project_Record/01_07.md)
 - [2020-01-09](Project_Record/01_09.md)
 
 ---
+
+## 🌈 유용한 자료들
 
 ### 💡 [자료모음](Repository/자료모음.md)
 
