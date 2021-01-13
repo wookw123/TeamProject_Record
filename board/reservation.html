@@ -4,13 +4,83 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>쉬다갈래</title>
   </head>
+  <!--부트스트랩-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+  <!-- 기본 CSS -->
+  <link rel="stylesheet" href="../css/base.css">
+  <!-- 예약페이지 디자인 -->
+  <style>
+
+
+  </style>
 
   <body>
     <header class="my-header">
       <h1>여긴header</h1>
     </header>
+
+    <section>
+      <!-- grid사용: class="container" -->
+      <div class="container">
+        <div class="row">
+          <div class="res-form col-xs-12 col-md-8 col-sm-8">
+            <!-- 예약한 숙소, 방, 날짜 정보 -->
+            <div class="main-box">
+
+              <div class="sub-box1">
+                <!-- 반반 나눌용 -->
+                <div style="overflow: hidden">
+                  <!-- 왼쪽: 호텔사진 -->
+                  <div>
+                    <img src="../img/res_img.jpg" alt="" width="300" height="300">
+                  </div>
+                  <!-- 오른쪽: 예약내역 -->
+                  <div style="float: right;">
+                    <div>
+                      <p>숙소 이름</p>
+                    </div>
+                    <div>
+                      <p>예약한 방 내역</p>
+                    </div>
+                    <div>
+                      <p>빌린 기간</p>
+                    </div>
+                    <div>체크인: xxx</div>
+                    <div>체크아웃: xxx</div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- 예약자 이름, 휴대폰 -->
+              <div class="sub-box2">
+                <div><input type="text"></div>
+                <div><input type="text"></div>
+              </div>
+
+              <!-- 결제수단 -->
+              <div>
+                <p>결제 수단 선택 </p>
+                <select name="" id="">
+                  <option value="">신용/체크카드</option>
+                  <option value="">계좌이체</option>
+                  <option value="">toss</option>
+                  <option value="">카카오페이</option>
+                </select>
+              </div>
+
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+
+    </section>
 
     <footer class="my-footer">
       <h1>여긴 footer</h1>
