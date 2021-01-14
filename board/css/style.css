@@ -1,0 +1,37 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+section {
+	margin-top: 50px;
+}
+
+/* board */
+.write-notice .btn,.board .btn{
+    float:right;
+}
+.notice .thead{
+    text-align: center;
+    /*이거왜 안될까요? */
+}
+.search-wrap {
+	overflow: hidden;
+	margin-bottom: 20px;
+}
+
+.search-btn, .search-input, .search-select {
+	float: right;
+}
+
+.search-input {
+	width: 140px;
+}
+
+.search-select {
+	width: 80px;
+}
+
+
+
+
+
