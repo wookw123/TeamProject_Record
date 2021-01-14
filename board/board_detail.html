@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <style type="text/css">
+
+        .detail-head{
+            width: 250px;
+            text-align: center;
+            height: 40px;
+            line-height: 40px;
+            margin: 70px auto;
+            border-top: 1px solid #E1E1E1;
+            border-bottom: 1px solid #E1E1E1;
+        }
+        
+        
+        .board-detail .detail-body .box{
+            height: 300px ;
+            width: 80%;
+            margin: auto;
+            border: 1px solid #e1e1e1;
+            padding: 10px;
+        }
+        .box .first strong{
+            float: right;
+            padding-right: 10px;
+        }
+        .box .second span{
+            float: right;
+        }
+            
+        .box .first{
+            padding-top: 10px;
+            padding-bottom: 10px;
+            border-bottom: 1px dotted #E1E1E1;
+        }
+        .box .second{
+            padding-top: 10px;
+            padding-bottom: 30px;
+            border-bottom: 1px dotted #E1E1E1;
+        }
+
+       
+        .box .content{
+            padding: 10px;
+            
+        }
+        .box .content textarea{
+            width:80%;
+            height: 130px;
+            resize: none;
+            margin: auto;
+        }
+       
+        .box .second span{
+            font-size: small;
+            text-align: right;
+        }
+
+        .box span{
+            
+            padding:10px;
+        }
+
+        .detail-body button{
+            float: right;
+        }
+        
+        .detail-body .button{
+            padding-top: 10px;
+            width: 80%;
+            margin: auto;
+        }
+
+        .reply-wrap{
+            border: 1px solid #E1E1E1;
+            padding: 15px;
+            padding-right: 50px;
+            
+        }
+        .reply-body textarea{
+            width: 90%;
+            margin: auto;
+        }
+        .reply-body input{
+            width: 20%;
+        }
+        .reply-text{
+            padding-bottom: 15px;
+        }
+        .reply-name{
+            padding-bottom: 5px;
+        }
+        .reply-pw{
+            padding-bottom: 5px;
+        }
+        .reply-info{
+            padding-left: 100px;
+        }
+        .reply-text button{
+            float: right;
+            
+        }
+
+
+    </style>
+</head>
+<body>
+    <section>
+        <div class="container">
+            <div class="board-detail">
+                <div class="detail-head">
+                    <p>게시판내용</p>
+                    
+                </div>
+                <div class="detail-body">
+                    <div class="box">
+                        <div class="first">
+                            <span><input type="text" placeholder="제목을 입력"></span>
+                            <strong>num : 1</strong>
+                        </div>
+                        <div class="second">
+                            <span>조회수</span>
+                            <span>2021-01-14</span>
+                            <span>작성자</span>
+                        </div>
+                        <div class="third">
+                            <div class="content">내용</div>
+                            <div class="content">
+                                <textarea >동해물과 백두산이 마르고 닳도록</textarea> 
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="button">
+                        <button type="button" class="btn btn-warning btn-sm disabled">삭제</button>
+                        <button type="button" class="btn btn-success btn-sm disabled">수정</button>
+                        <button type="button" class="btn btn-info btn-sm">목록</button>
+                        
+                    </div>
+                    
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <div class="row">
+                <form class="reply-wrap">
+                    
+                        
+                        <div class="reply-img">
+                            <img src="img/profile.png">
+                        </div>
+                        <div class="reply-body">
+                            <div class="reply-text">
+                                <textarea class="form-control" rows="3"></textarea>
+                                <button type="button" class="btn btn-info btn-xs" id="replyRegist">등록하기</button>
+                            </div>
+                            <div class="reply-info">
+                                <div class="reply-name">
+                                    <input type="text" class="form-control input-sm" id="name"  placeholder="이름">
+                                </div>
+                                <div class="reply-pw">
+                                    <input type="password" class="form-control input-sm" id="pw"  placeholder="비밀번호">
+                                </div>
+                                
+                            </div>
+                        </div>
+                    
+                </form>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>
