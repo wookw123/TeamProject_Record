@@ -40,15 +40,24 @@
         body {}
 
         /* ============== 헤더 ================= */
-        
 
-        .title{
-            font-size: 40px;    
+        @media(max-width: 766px) {
+            .title {
+                text-align: center;
+                font-size: 40px;
+                margin-top: 30px;
+                margin-left: 25px;
+            }           
+        }
+
+
+        .title {
+            font-size: 40px;
             margin-top: 20px;
-            margin-left: 25px;        
-        }            
-        
-        
+            margin-left: 25px;
+        }
+
+
         .MainHeader {
             font-family: 'Gugi', cursive;
             background-color: #ead0b8;
@@ -56,15 +65,16 @@
             position: fixed;
             top: 0;
             left: 0;
-            z-index: 5;
+            z-index: 16;
             width: 100%;
-        }        
-        
+            height: 100px;
+        }
+
 
         .topmenu {
             /*상단 메뉴*/
-            
-            margin-top:25px ;
+
+            margin-top: 25px;
             font-size: 20px;
         }
 
@@ -83,7 +93,7 @@
         /* ============== 배너 ================= */
 
         .banner {
-            margin-top: 110px;
+            margin-top: 100px;
             width: 80%;
             margin-left: 10%;
             text-align: center;
@@ -183,10 +193,52 @@
 
         }
 
+        /* ============== 호텔 뷰 영역 ================= */
+
+        .mainview {
+            margin-top: 100px;
+            font-family: 'Jua', sans-serif;
+        }
+
+        .mainviewimg {
+            margin-top: 25px;
+
+
+        }
+
+        .gra_black {
+            position: absolute;
+            margin-right: 15px;
+            margin-left: 15px;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            z-index: 10;
+            color: white;
+
+            background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.66) 100%);
+        }
+
+        .mainviewinfo {
+            position: absolute;
+            top: 65%;
+            left: 5%;
+        }
+
+        .mainviewprice {
+            position: absolute;
+            top: 75%;
+            right: 8%;
+        }
+
+
+
         /* ============== 풋터 ================= */
 
         .mainfooter {
 
+            margin-top: 40px;
             background-color: rgb(156, 133, 120);
             height: 150px;
         }
@@ -202,25 +254,20 @@
 <body>
 
     <header class="MainHeader">
-       
-       
-        
-       
-
         <nav class="navbar">
             <div class="container-fluid">
                 <div class="navbar-header">
                     <!-- 화면이 휴대폰사이즈로 줄었을때 나오는 영역 -->
                     <button type="button" class="navbar-toggle topmenu" data-toggle="collapse" data-target="#myNavbar">
-                        <span class="glyphicon glyphicon-th-list"></span>                        
-                    </button>      
-                    <p class="title">쉬엇다 갈래?</p>             
+                        <span class="glyphicon glyphicon-th-list"></span>
+                    </button>
+                    <p class="title">쉬엇다 갈래?</p>
                 </div>
 
                 <!-- 메뉴 작성부분 -->
                 <div class="collapse navbar-collapse navbar-right" id="myNavbar">
-                    
-                    <ul class="nav navbar-nav topmenu">                        
+
+                    <ul class="nav navbar-nav topmenu">
                         <li>
                             <a href="##">공지사항</a>
                         </li>
@@ -233,12 +280,12 @@
                         <li>
                             <a href="##">회원가입</a>
                         </li>
-                    </ul> 
+                    </ul>
                 </div>
             </div>
         </nav>
 
-       
+
     </header>
 
 
@@ -330,10 +377,82 @@
                 </div>
             </form>
         </div>
+    </section>
 
-        <section style="height: 500px;">
+    <!-- 객실 뷰 영역 -->
+    <section class="mainview">
 
-        </section>
+        <h2 style="text-align: center;">*인기추천*</h2>
+        <div class="container">
+            <div class="row" style="text-align: center;">
+                <li class="col-lg-6 col-sm-12 mainviewimg">
+                    <img src="img/viewimg/5743fc4cd44d8.jpg" alt="">
+                    <div class="gra_black">
+
+                        <div class="mainviewinfo" style="text-align: left;">
+                            <p style="margin: 0; font-size: 25px;">숙박업소 이름</p>
+                            <p style="margin: 0; font-size: 15px;">5.0</p>
+                            <p style="margin: 0; font-size: 19px;">강남구</p>
+                        </div>
+
+                        <div class="mainviewprice">
+                            <p style="margin: 0; font-size: 25px;">89,500</p>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="col-lg-6 col-sm-12 mainviewimg">
+                    <img src="img/viewimg/5743fc4cd44d8.jpg" alt="">
+                    <div class="gra_black">
+
+                        <div class="mainviewinfo" style="text-align: left;">
+                            <p style="margin: 0; font-size: 25px;">숙박업소 이름</p>
+                            <p style="margin: 0; font-size: 15px;">5.0</p>
+                            <p style="margin: 0; font-size: 19px;">강남구</p>
+                        </div>
+
+                        <div class="mainviewprice">
+                            <p style="margin: 0; font-size: 25px;">89,500</p>
+                        </div>
+
+                    </div>
+                </li>
+
+                <li class="col-lg-6 col-sm-12 mainviewimg">
+                    <img src="img/viewimg/5743fc4cd44d8.jpg" alt="">
+                    <div class="gra_black">
+
+                        <div class="mainviewinfo" style="text-align: left;">
+                            <p style="margin: 0; font-size: 25px;">숙박업소 이름</p>
+                            <p style="margin: 0; font-size: 15px;">5.0</p>
+                            <p style="margin: 0; font-size: 19px;">강남구</p>
+                        </div>
+
+                        <div class="mainviewprice">
+                            <p style="margin: 0; font-size: 25px;">89,500</p>
+                        </div>
+
+                    </div>
+                </li>
+
+                <li class="col-lg-6 col-sm-12 mainviewimg">
+                    <img src="img/viewimg/5743fc4cd44d8.jpg" alt="">
+                    <div class="gra_black">
+
+                        <div class="mainviewinfo" style="text-align: left;">
+                            <p style="margin: 0; font-size: 25px;">숙박업소 이름</p>
+                            <p style="margin: 0; font-size: 15px;">5.0</p>
+                            <p style="margin: 0; font-size: 19px;">강남구</p>
+                        </div>
+
+                        <div class="mainviewprice">
+                            <p style="margin: 0; font-size: 25px;">89,500</p>
+                        </div>
+
+                    </div>
+                </li>
+            </div>
+        </div>
     </section>
 
 
