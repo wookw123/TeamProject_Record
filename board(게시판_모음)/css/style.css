@@ -10,9 +10,12 @@ section {
 .write-notice .btn,.board .btn{
     float:right;
 }
-.notice .thead{
+.table-bordered>thead>tr>td, .table-bordered>thead>tr>th {
     text-align: center;
-    /*이거왜 안될까요? */
+    
+}
+.notice p{
+	padding-bottom: 10px;
 }
 .search-wrap {
 	overflow: hidden;
@@ -30,6 +33,311 @@ section {
 .search-select {
 	width: 80px;
 }
+
+  .detail-head{
+            width: 250px;
+            text-align: center;
+            height: 40px;
+            line-height: 40px;
+            margin: 70px auto;
+            border-top: 1px solid #E1E1E1;
+            border-bottom: 1px solid #E1E1E1;
+        }
+        
+        
+        .board-detail .detail-body .box{
+            height: 400px ;
+            width: 80%;
+            margin: auto;
+            border: 1px solid #e1e1e1;
+            padding: 30px;
+            
+        }
+        .box .first strong{
+            float: right;
+            padding-right: 10px;
+        }
+        .box .second span{
+            float: right;
+        }
+            
+        .box .first{
+            padding-top: 10px;
+            padding-bottom: 10px;
+            border-bottom: 1px dotted #E1E1E1;
+        }
+        .box .second{
+            padding-top: 10px;
+            padding-bottom: 30px;
+            border-bottom: 1px dotted #E1E1E1;
+        }
+
+       
+        .box .content{
+            padding: 10px;
+            
+        }
+        .box .content-detail textarea{
+            width:100%;
+            height: 180px;
+            resize: none;
+            margin: auto;
+        }
+       
+        .box .second span{
+            font-size: small;
+            text-align: right;
+        }
+
+        .box span{
+            
+            padding:10px;
+        }
+
+        .detail-body button{
+            float: right;
+        }
+        
+        .detail-body .button{
+            padding-top: 10px;
+            width: 80%;
+            margin: auto;
+        }
+        .reply-detail{
+            height: auto ;
+            width: 80%;
+            margin: auto;
+            border: 1px solid #e1e1e1;
+            padding: 30px;
+        }
+
+        .reply-box{
+            height: 300px auto ;
+            width: 80%;
+            margin: auto;
+            border: 1px solid #e1e1e1;
+            padding: 30px;
+        }
+
+        .reply-text{
+            width: 80%;
+            padding-left: 50px;
+        }
+        .reply-text textarea{
+            width: 100%;
+            resize: none;
+            overflow: scroll auto;
+        }
+
+        .reply-img{
+            position: relative;
+            left: 10px;
+            bottom: 15px;
+        }
+        .reply-detail-img{
+            position: relative;
+            left: 10px;
+        }
+
+        .reply-button{
+            position: relative;
+            float: right;
+            top: 65px;
+            right: 15px;
+        }
+        .reply-detail-button{
+            position: relative;
+            left: 15px;
+        }
+
+        footer{
+            padding: 20px;
+		}
+		
+		/*  */
+
+		
+        .detail-head{
+            width: 250px;
+            text-align: center;
+            height: 40px;
+            line-height: 40px;
+            margin: 70px auto;
+            border-top: 1px solid #E1E1E1;
+            border-bottom: 1px solid #E1E1E1;
+        }
+        
+        
+        .board-detail .detail-body .box{
+            height: 400px ;
+            width: 80%;
+            margin: auto;
+            border: 1px solid #e1e1e1;
+            padding: 30px;
+            
+        }
+        .box .first strong{
+            float: right;
+            padding-right: 10px;
+        }
+        .box .second span{
+            float: right;
+        }
+            
+        .box .first{
+            padding-top: 10px;
+            padding-bottom: 10px;
+            border-bottom: 1px dotted #E1E1E1;
+        }
+        .box .second{
+            padding-top: 10px;
+            padding-bottom: 30px;
+            border-bottom: 1px dotted #E1E1E1;
+        }
+
+       
+        .box .content{
+            padding: 10px;
+            
+        }
+        .box .content-detail textarea{
+            width:100%;
+            height: 180px;
+            resize: none;
+            margin: auto;
+        }
+       
+        .box .second span{
+            font-size: small;
+            text-align: right;
+        }
+
+        .box span{
+            
+            padding:10px;
+        }
+
+        .detail-body button{
+            float: right;
+        }
+        
+        .detail-body .button{
+            padding-top: 10px;
+            width: 80%;
+            margin: auto;
+        }
+        .reply-detail{
+            height: auto ;
+            width: 80%;
+            margin: auto;
+            border: 1px solid #e1e1e1;
+            padding: 30px;
+        }
+
+        .reply-box{
+            height: 300px auto ;
+            width: 80%;
+            margin: auto;
+            border: 1px solid #e1e1e1;
+            padding: 30px;
+        }
+
+        .reply-text{
+            width: 80%;
+            padding-left: 50px;
+        }
+        .reply-text textarea{
+            width: 100%;
+            resize: none;
+            overflow: scroll auto;
+        }
+
+        .reply-img{
+            position: relative;
+            left: 10px;
+            bottom: 15px;
+        }
+        .reply-detail-img{
+            position: relative;
+            left: 10px;
+        }
+
+        .reply-button{
+            position: relative;
+            float: right;
+            top: 65px;
+            right: 15px;
+        }
+        .reply-detail-button{
+            position: relative;
+            left: 15px;
+        }
+
+        footer{
+            padding: 20px;
+        }
+
+        
+
+
+
+		/* write */
+		.write-header{
+            width: 250px;
+            text-align: center;
+            font-size: x-large;
+            height: 40px;
+            line-height: 40px;
+            margin: 70px auto;
+            border-top: 1px solid #E1E1E1;
+            border-bottom: 1px solid #E1E1E1;
+        }
+
+        .wirte-box{
+          height: 600px auto;
+            width: 80%;
+            margin: auto;
+            border: 1px solid #e1e1e1;
+            padding: 30px;
+        }
+        
+        .t-control .write-content,.t-control .write-title {
+          font-size:large;
+          text-align: center;
+          width: 100px;
+          vertical-align: middle;
+        }
+
+        
+        .t-control input {
+          width: 200px;
+          display: inline;
+        }
+
+        .table>tbody>tr>td{
+          padding: 23px;
+          line-height: 4;
+
+        }
+
+       
+        
+        .t-control .input-sm {
+          height: auto;
+          line-height: normal;
+        }
+        
+        .t-control .write-title {
+          border-bottom: 1px dashed #E1E1E1;
+        }
+        .write-botton{
+          margin: 30px auto;
+          text-align: center;
+        }
+        .write-content textarea{
+          resize: none;
+        }
+
 
 
 

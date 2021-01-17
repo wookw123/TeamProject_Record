@@ -8,202 +8,217 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <title>board</title>
     <link rel="stylesheet" href="css/style.css">
+
+    <style type="text/css">
+       
+        .table>tbody>tr>td{
+            padding:5px
+        }
+        
+        .board-table{
+            font-size: 17px;
+        }
+
+        
+    </style>
+
+
 </head>
 <body>
     <section class="board">
         <div class="container">
             <ul class="nav nav-tabs">
-                <li class="active"><a data-toggle="tab" href="#home">Home</a></li>
-                <li><a data-toggle="tab" href="#menu1">공지사항</a></li>
-                <li><a data-toggle="tab" href="#menu2">자유게시판</a></li>
-              </ul>
+                <li class="active"><a data-toggle="tab" href="#home">공지사항</a></li>
+                <li><a data-toggle="tab" href="#menu1">자유게시판</a></li>
+            </ul>
               
-              <div class="tab-content">
+            <div class="tab-content">
                 <div id="home" class="tab-pane fade in active">
-                  <h3>HOME</h3>
-                  <p>Some content.</p>
+                    <div class="container">
+                        <div class="notice">
+                            <div class="text-center"> 
+                                <h2>공지사항</h2>
+                                <hr>
+                            </div>
+                            <p>※ 중요 내용을 안내해드립니다.</p>
+                            <div class="text-center">          
+                                <table class="board-table table table-bordered table-hover">
+                                <thead>
+                                    <tr>
+                                    <th>번호</th>
+                                    <th>제목</th>
+                                    <th>작성자</th>
+                                    <th>등록일</th>
+                                    <th>조회수</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                    <td>5</td>
+                                    <td>
+                                        <a href="#">공지5</a>
+                                    </td>
+                                    <td>관리자</td>
+                                    <td>2021-01-12</td>
+                                    <td>555</td>
+                                    </tr>
+                                    <tr>
+                                        <td>4</td>
+                                        <td>
+                                            <a href="#">공지4</a>
+                                        </td>
+                                        <td>관리자</td>
+                                        <td>2021-01-12</td>
+                                        <td>555</td>
+                                    </tr>
+                                    <tr>
+                                        <td>3</td>
+                                        <td>
+                                            <a href="#">공지3</a>
+                                        </td>
+                                        <td>관리자</td>
+                                        <td>2021-01-12</td>
+                                        <td>555</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2</td>
+                                        <td>
+                                            <a href="#">공지2</a>
+                                        </td>
+                                        <td>관리자</td>
+                                        <td>2021-01-12</td>
+                                        <td>555</td>
+                                    </tr>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>
+                                            <a href="#">공지1</a>
+                                        </td>
+                                        <td>관리자</td>
+                                        <td>2021-01-12</td>
+                                        <td>555</td>
+                                    </tr>
+                                </tbody>
+                                </table>
+                            </div>  
+                            <from>
+                                <button type="button" class="btn btn-info btn-sm">게시글작성</button>
+                                <div class="text-center">
+                                    
+                                    <ul class="pagination pagination-sm">
+                                      <li><a href="#">이전</a></li>
+                                      <li class="active"><a href="#">1</a></li>
+                                      <li class><a href="#">2</a></li>
+                                      <li><a href="#">3</a></li>
+                                      <li><a href="#">다음</a></li>
+                                    </ul>
+                                  </div>
+                                  
+                              </from>
+                            
+                        </div>
+                      </div>
+                    
                 </div>
                 <div id="menu1" class="tab-pane fade">
-                  <div class="container">
-                    <div class="notice">
-                        <h2>공지사항</h2>
-                        <p>※ 중요 내용을 안내해드립니다.</p>
-                        <div class="text-center">          
-                            <table class="table table-bordered table table-hover">
-                            <thead>
-                                <tr>
-                                <th>번호</th>
-                                <th>제목</th>
-                                <th>작성자</th>
-                                <th>등록일</th>
-                                <th>조회수</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                <td>5</td>
-                                <td>
-                                    <a href="#">공지5</a>
-                                </td>
-                                <td>관리자</td>
-                                <td>2021-01-12</td>
-                                <td>555</td>
-                                </tr>
-                                <tr>
-                                    <td>4</td>
+                    <div class="container">
+                        <div class="free-board">
+                            <div class="text-center"> 
+                            <h2>자유게시판</h2>
+                            <hr>
+                                <form action="boardList">
+                                    <div class="search-wrap">
+                                    <button type="submit" class="btn btn-info search-btn">검색</button>
+                                    
+                                    <input type="text" class="form-control search-input">
+                                    
+                                    <select class="form-control search-select">
+                                            <option>제목</option>
+                                            <option>내용</option>
+                                            <option>작성자</option>
+                                    </select>
+                                    </div>
+                                    
+                                </form>
+                                <table class="board-table table table-bordered table table-hover">
+                                <thead>
+                                    <tr>
+                                    <th>번호</th>
+                                    <th>제목</th>
+                                    <th>작성자</th>
+                                    <th>등록일</th>
+                                    <th>조회수</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                    <td>5</td>
                                     <td>
-                                        <a href="#">공지4</a>
+                                        <a href="#">aaa</a>
                                     </td>
-                                    <td>관리자</td>
+                                    <td>aaa</td>
                                     <td>2021-01-12</td>
                                     <td>555</td>
-                                </tr>
-                                <tr>
-                                    <td>3</td>
-                                    <td>
-                                        <a href="#">공지3</a>
-                                    </td>
-                                    <td>관리자</td>
-                                    <td>2021-01-12</td>
-                                    <td>555</td>
-                                </tr>
-                                <tr>
-                                    <td>2</td>
-                                    <td>
-                                        <a href="#">공지2</a>
-                                    </td>
-                                    <td>관리자</td>
-                                    <td>2021-01-12</td>
-                                    <td>555</td>
-                                </tr>
-                                <tr>
-                                    <td>1</td>
-                                    <td>
-                                        <a href="#">공지1</a>
-                                    </td>
-                                    <td>관리자</td>
-                                    <td>2021-01-12</td>
-                                    <td>555</td>
-                                </tr>
-                            </tbody>
-                            </table>
-                        </div>  
-                        <from>
-                            <button type="button" class="btn btn-info btn-sm">게시글작성</button>
-                            <div class="text-center">
-                                
-                                <ul class="pagination pagination-sm">
-                                  <li><a href="#">이전</a></li>
-                                  <li class="active"><a href="#">1</a></li>
-                                  <li class><a href="#">2</a></li>
-                                  <li><a href="#">3</a></li>
-                                  <li><a href="#">다음</a></li>
-                                </ul>
-                              </div>
-                              
-                          </from>
-                        
+                                    </tr>
+                                    <tr>
+                                        <td>4</td>
+                                        <td>
+                                            <a href="#">bbb</a>
+                                        </td>
+                                        <td>bbb</td>
+                                        <td>2021-01-12</td>
+                                        <td>555</td>
+                                    </tr>
+                                    <tr>
+                                        <td>3</td>
+                                        <td>
+                                            <a href="#">ccc</a>
+                                        </td>
+                                        <td>ccc</td>
+                                        <td>2021-01-12</td>
+                                        <td>555</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2</td>
+                                        <td>
+                                            <a href="#">ddd</a>
+                                        </td>
+                                        <td>ddd</td>
+                                        <td>2021-01-12</td>
+                                        <td>555</td>
+                                    </tr>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>
+                                            <a href="#">eee</a>
+                                        </td>
+                                        <td>eee</td>
+                                        <td>2021-01-12</td>
+                                        <td>555</td>
+                                    </tr>
+                                </tbody>
+                                </table>
+                            </div>  
+                            <from>
+                                <button type="button" class="btn btn-info btn-sm">게시글작성</button>
+                                <div class="text-center">
+                                    
+                                    <ul class="pagination pagination-sm">
+                                      <li><a href="#">이전</a></li>
+                                      <li class="active"><a href="#">1</a></li>
+                                      <li><a href="#">2</a></li>
+                                      <li><a href="#">3</a></li>
+                                      <li><a href="#">다음</a></li>
+                                    </ul>
+                                  </div>
+                                  
+                              </from>
+                            
+                        </div>
                     </div>
-                  </div>
                 </div>
-                <div id="menu2" class="tab-pane fade">
-                  <div class="container">
-                    <div class="free-board">
-                        <div class="text-center"> 
-                        <h2>자유게시판</h2>
-                        <hr>
-                            <form action="boardList">
-                                <div class="search-wrap">
-                                <button type="submit" class="btn btn-info search-btn">검색</button>
-                                
-                                <input type="text" class="form-control search-input">
-                                
-                                <select class="form-control search-select">
-                                        <option>제목</option>
-                                        <option>내용</option>
-                                        <option>작성자</option>
-                                </select>
-                                </div>
-                                
-                            </form>
-                            <table class="table table-bordered table table-hover">
-                            <thead>
-                                <tr>
-                                <th>번호</th>
-                                <th>제목</th>
-                                <th>작성자</th>
-                                <th>등록일</th>
-                                <th>조회수</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                <td>5</td>
-                                <td>
-                                    <a href="#">aaa</a>
-                                </td>
-                                <td>aaa</td>
-                                <td>2021-01-12</td>
-                                <td>555</td>
-                                </tr>
-                                <tr>
-                                    <td>4</td>
-                                    <td>
-                                        <a href="#">bbb</a>
-                                    </td>
-                                    <td>bbb</td>
-                                    <td>2021-01-12</td>
-                                    <td>555</td>
-                                </tr>
-                                <tr>
-                                    <td>3</td>
-                                    <td>
-                                        <a href="#">ccc</a>
-                                    </td>
-                                    <td>ccc</td>
-                                    <td>2021-01-12</td>
-                                    <td>555</td>
-                                </tr>
-                                <tr>
-                                    <td>2</td>
-                                    <td>
-                                        <a href="#">ddd</a>
-                                    </td>
-                                    <td>ddd</td>
-                                    <td>2021-01-12</td>
-                                    <td>555</td>
-                                </tr>
-                                <tr>
-                                    <td>1</td>
-                                    <td>
-                                        <a href="#">eee</a>
-                                    </td>
-                                    <td>eee</td>
-                                    <td>2021-01-12</td>
-                                    <td>555</td>
-                                </tr>
-                            </tbody>
-                            </table>
-                        </div>  
-                        <from>
-                            <button type="button" class="btn btn-info btn-sm">게시글작성</button>
-                            <div class="text-center">
-                                
-                                <ul class="pagination pagination-sm">
-                                  <li><a href="#">이전</a></li>
-                                  <li class="active"><a href="#">1</a></li>
-                                  <li><a href="#">2</a></li>
-                                  <li><a href="#">3</a></li>
-                                  <li><a href="#">다음</a></li>
-                                </ul>
-                              </div>
-                              
-                          </from>
-                        
-                    </div>
-                  </div>
-                </div>
-              </div>
+               
+            </div>
 
           
         </div>
