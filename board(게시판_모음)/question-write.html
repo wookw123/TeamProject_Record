@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>질문작성</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+
+    <style type="text/css">
+        .write-wrap{
+            height: 600px;
+            margin: 10px auto;
+            width: 100%;
+            border: 1px solid #e1e1e1;
+            
+            
+        }
+        .write-box{
+            height: 100%;
+            width: 100%;
+            margin: auto;
+            text-align: center;
+            
+            
+        }
+        .write-box th{
+            text-align: right ;
+            font-size: 20px;
+            
+        }
+
+        .write-box input{
+            width: 60%;
+            height: 30%;
+            font-size: 20px;
+        }
+        .write-box textarea{
+            width: 60%;
+            height: 100%;
+        }
+        
+      
+        .write-button{
+            padding-bottom: 50px;
+        }
+        .write-box td, .write-box th{}
+
+        
+    </style>
+</head>
+<body>
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="board-title">
+                    <p>질문작성</p>
+                </div>
+                <div class="write-wrap">
+                    <table class="write-box">
+                        <tr>
+                            <th>아이디</th>
+                            <td><input type="text"></td>
+                        </tr>
+                        <tr>
+                            <th>비밀번호</th>
+                            <td><input type="password"></td>
+                        </tr>
+                        <tr>
+                            <th>제목</th>
+                            <td><input type="text"></td>
+                        </tr>
+                        <tr>
+                            <th>내용</th>
+                            <td><textarea></textarea></td>
+                        </tr>
+
+                    </table>
+                      
+                </div>
+                <div class="write-button">
+                    <button type="button" class="btn btn-info">게시글 등록</button>
+                    <button type="button" class="btn btn-info">목록</button>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
