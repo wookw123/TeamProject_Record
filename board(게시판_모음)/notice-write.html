@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,69 +8,14 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/board.css">
 
     <style type="text/css">
-        .write-wrap{
-            height: 600px;
-            margin: 10px auto;
-            width: 100%;
-             
-            
-        }
-        .write-box{
-            display: grid;
-            grid-template-columns: 1fr 3fr;
-            border: solid 1px #e1e1e1;
-            width: 80%;
-            padding: 10px;
-            margin: 20px auto;
-            height: 90%;
-        }
-        .write-left{
-            display: grid;
-            grid-template-rows: 1fr 3fr;
-            text-align: center;
-            font-size: x-large;
-            vertical-align: middle;
-        }
-        .write-right{
-            display: grid;
-            grid-template-rows: 1fr 3fr;
-        }
-        .write-title{
-            padding-top: 40px;
-        }
-        .write-title input{
-            width: 90%;
-            height: 80%;
-            font-size: 20px;
-        }
-
-        .write-content{
-            padding-top: 40px;
-        }
-        .write-content textarea{
-            width: 90%;
-            height: 90%;
-            overflow: auto;
-            resize: none;
-            font-size: 20px;
-        }
-        .write-button{
-            padding-bottom: 50px;
-        }
-
-        .write-left .write-title{
-            padding-top: 60px;
-        }
-        .write-left .write-content{
-            padding-top: 60px;
-        }
-
-        
+      
+    
     </style>
 </head>
+
 <body>
     <section>
         <div class="container">
@@ -79,24 +25,44 @@
                 </div>
                 <div class="write-wrap">
                     <div class="write-box">
-                        <div class="write-left">
-                            <div class="write-title">제목:</div>
-                            <div class="write-content">내용:</div>
+                        <div class="write-title">
+                            <dl>
+                                <dt class="title-dt">제목</dt>
+                                <dd><input type="text" placeholder="제목입력"></dd>
+                            </dl>
                         </div>
-                        <div class="write-right">
-                            <div class="write-title"><input type="text"></div>
-                            <div class="write-content"><textarea></textarea></div>
+                        <div class="write-info">
+                            <dl>
+                                <dt class="info-dt">내용</dt>
+                            </dl>
+                        </div>
+                        <!-- <div class="write-info">
+                            <dl>
+                                <dt>아이디</dt>
+                                <dd><input type="text" placeholder="사용자아이디"></dd>
+                            </dl>
+                            <dl>
+                                <dt>비밀번호</dt>
+                                <dd><input type="password" placeholder="비밀번호입력"></dd>
+                            </dl>
+                        </div>
+                        </div> -->
+                        <div class="write-content">
+                            <textarea placeholder="내용입력"></textarea>
+
                         </div>
 
+                        <div class="write-button">
+                            <button type="button" class="btn btn-info">공지 등록</button>
+                            <button type="button" class="btn btn-info">목록</button>
+                        </div>
                     </div>
-                    
-                </div>
-                <div class="write-button">
-                    <button type="button" class="btn btn-info">공지 등록</button>
-                    <button type="button" class="btn btn-info">목록</button>
                 </div>
             </div>
+
+        </div>
         </div>
     </section>
 </body>
+
 </html>
