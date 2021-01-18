@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <style>
+        .regist-room {
+            width: 20%;
+            background-color: #ddd;
+            text-align: center;
+        }
+        .phone{
+            width: 30%;
+            display: inline-block;
+        }
+        .company-room-btn{
+            text-align: center;
+        }
+        .table-bordered{
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <form action="">
+            <table class="table table-bordered">
+
+                <tbody>
+                    <tr>
+                        <th class="regist-room">호텔명칭</th>
+                        <td><input type="text" class="form-control" id="usr"></td>
+                    </tr>
+                    <tr>
+                        <th class="regist-room">주소</th>
+                        <td>
+                            <div class="form-group">
+                                <label for="addr-num">주소</label>
+                                <div class="input-group">
+                                    <input type="text" class="form-control" id="addrZipNum" placeholder="우편번호" readonly
+                                        name="addrZipNum">
+                                    <div class="input-group-addon">
+                                        <button type="button" class="btn btn-primary" onclick="goPopup()">주소찾기</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="form-control" id="addrBasic" placeholder="기본주소" readonly
+                                    name="addrBasic">
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="form-control" id="addrDetail" placeholder="상세주소" readonly
+                                    name="addrDetail">
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th class="regist-room">분류</th>
+                        <td>
+                            <select class="form-control" id="sel1">
+                                <option>호텔</option>
+                                <option>모텔</option>
+                              </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th class="regist-room">전화번호</th>
+                        <td>
+                            <select class="form-control phone">
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                            </select>-
+                            <input type="text" class="form-control phone" >-
+                            <input type="text" class="form-control phone" >   
+                        </td>
+                    </tr>
+                    <tr>
+                        <th class="regist-room">메인 이미지</th>
+                        <td><input type="file" name="file" id="file"></td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="company-room-btn">
+                <button type="button" class="btn">수정</button>
+                <button type="button" class="btn btn-default">삭제</button>
+            </div>
+        </form>
+
+
+        <form action="">
+            <p>등록된 객실</p>
+            <table class="table table-bordered">
+                <thead style="background-color: #ddd; ">
+                  <tr>
+                    <td>
+                        <strong>객실이름</strong>
+                    </td>
+                    <td>
+                        <strong>객실정보</strong>
+                    </td>
+                    <td>
+                        <strong>비고</strong>
+                    </td>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>스탠다드</td>
+                    <td>Doe</td>
+                    <td>
+                        <div class="">
+                            <button type="button" class="btn btn-warning">수정</button>
+                            <button type="button" class="btn btn-danger">삭제</button>
+                        </div>
+                    </td>
+                  </tr>
+                  
+                </tbody>
+              </table>
+
+        </form>
+    </div>
+
+</body>
+
+</html>
