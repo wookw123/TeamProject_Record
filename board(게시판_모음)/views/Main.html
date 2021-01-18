@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+
+        <!-- 폰트 -->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Gugi&display=swap" rel="stylesheet">
+
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Jua&display=swap" rel="stylesheet">
+
+        <!-- 폰트 -->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet">
+        <!-- ========================================================================================= -->
+        <link rel="stylesheet" href="css/main.css">
+
+
+
+    </head>
+
+    <body>
+
+        <header class="MainHeader">
+            <nav class="navbar">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <!-- 화면이 휴대폰사이즈로 줄었을때 나오는 영역 -->
+                        <button type="button" class="navbar-toggle topmenu" data-toggle="collapse"
+                            data-target="#myNavbar">
+                            <span class="glyphicon glyphicon-th-list"></span>
+                        </button>
+                        <p class="title">쉬엇다 갈래?</p>
+                    </div>
+
+                    <!-- 메뉴 작성부분 -->
+                    <div class="collapse navbar-collapse navbar-right" id="myNavbar">
+
+                        <ul class="nav navbar-nav topmenu">
+                            <li>
+                                <a href="##">공지사항</a>
+                            </li>
+                            <li>
+                                <a href="##">고객센터</a>
+                            </li>
+                            <li>
+                                <a href="##">로그인</a>
+                            </li>
+                            <li>
+                                <a href="##">회원가입</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
+
+        </header>
+
+
+
+        <!-- 배너영역 -->
+
+        <section class="banner">
+
+            <div id="myCarousel" class="carousel slide" data-ride="carousel">
+
+                <!-- Indicators -->
+                <ol class="carousel-indicators">
+                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#myCarousel" data-slide-to="1"></li>
+                    <li data-target="#myCarousel" data-slide-to="2"></li>
+                </ol>
+
+
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner">
+                    <div class="item active">
+                        <a href="#"><img src="img/1.jpg" alt="1" style="width: 100%; "></a>
+                    </div>
+
+                    <div class="item">
+                        <a href="#"><img src="img/2.jpg" alt="2" style="width: 100%; "></a>
+                    </div>
+
+                    <div class="item">
+                        <a href="#"><img src="img/3.jpg" alt="3" style="width: 100%; "></a>
+                    </div>
+                </div>
+
+                <!-- Left and right controls -->
+                <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </section>
+
+
+        <!-- 아이콘 영역 -->
+        <section>
+            <div class="container" style="margin-top: 90px;">
+                <div class="row">
+                    <li class="col-lg-3 col-md-3 col-sm-6 col-xs-6">
+                        <a href="##" class="selecttype typeselect">
+                            <img src="img/icon/region.png" alt="region" class="typeimg ">
+                            <p class="typetext">지역별 보기</p>
+                        </a>
+                    </li>
+                    <li class="col-lg-3 col-md-3 col-sm-6 col-xs-6">
+                        <a href="##" class="selecttype">
+                            <img src="img/icon/recommendation.png" alt="recommendation" class="typeimg">
+                            <p class="typetext">맞춤 추천</p>
+
+                        </a>
+                    </li>
+                    <li class="col-lg-3 col-md-3 col-sm-6 col-xs-6">
+                        <a href="##" class="selecttype">
+                            <img src="img/icon/travel.png" alt="travel" class="typeimg">
+                            <p class="typetext">여행지 주변</p>
+                        </a>
+                    </li>
+                    <li class="col-lg-3 col-md-3 col-sm-6 col-xs-6">
+                        <a href="##" class="selecttype">
+                            <img src="img/icon/free-icon-nearby-2041118.png" alt="arround" class="typeimg">
+                            <p class="typetext">내 주변</p>
+                        </a>
+                    </li>
+                </div>
+
+            </div>
+
+            <div class="container" style="margin-top: 50px ;">
+                <form action="/action_page.php">
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="혹시 찾으시는 곳이 있나요?" name="search"
+                            style="height: 40px;">
+                        <div class="input-group-btn">
+                            <button class="btn btn-default" type="submit"><i class="glyphicon glyphicon-search"
+                                    style="height: 25px;"></i></button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+        <!-- 객실 뷰 영역 -->
+        <section class="mainview">
+
+            <h2 style="text-align: center;">*인기추천*</h2>
+            <div class="container">
+                <div class="row" style="text-align: center;">
+                    <li class="col-lg-6 col-sm-12 mainviewimg">
+                        <img src="img/viewimg/5743fc4cd44d8.jpg" alt="">
+                        <div class="gra_black">
+
+                            <div class="mainviewinfo" style="text-align: left;">
+                                <p style="margin: 0; font-size: 25px;">숙박업소 이름</p>
+                                <p style="margin: 0; font-size: 15px;">5.0</p>
+                                <p style="margin: 0; font-size: 19px;">강남구</p>
+                            </div>
+
+                            <div class="mainviewprice">
+                                <p style="margin: 0; font-size: 25px;">89,500</p>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="col-lg-6 col-sm-12 mainviewimg">
+                        <img src="img/viewimg/5743fc4cd44d8.jpg" alt="">
+                        <div class="gra_black">
+
+                            <div class="mainviewinfo" style="text-align: left;">
+                                <p style="margin: 0; font-size: 25px;">숙박업소 이름</p>
+                                <p style="margin: 0; font-size: 15px;">5.0</p>
+                                <p style="margin: 0; font-size: 19px;">강남구</p>
+                            </div>
+
+                            <div class="mainviewprice">
+                                <p style="margin: 0; font-size: 25px;">89,500</p>
+                            </div>
+
+                        </div>
+                    </li>
+
+                    <li class="col-lg-6 col-sm-12 mainviewimg">
+                        <img src="img/viewimg/5743fc4cd44d8.jpg" alt="">
+                        <div class="gra_black">
+
+                            <div class="mainviewinfo" style="text-align: left;">
+                                <p style="margin: 0; font-size: 25px;">숙박업소 이름</p>
+                                <p style="margin: 0; font-size: 15px;">5.0</p>
+                                <p style="margin: 0; font-size: 19px;">강남구</p>
+                            </div>
+
+                            <div class="mainviewprice">
+                                <p style="margin: 0; font-size: 25px;">89,500</p>
+                            </div>
+
+                        </div>
+                    </li>
+
+                    <li class="col-lg-6 col-sm-12 mainviewimg">
+                        <img src="img/viewimg/5743fc4cd44d8.jpg" alt="">
+                        <div class="gra_black">
+
+                            <div class="mainviewinfo" style="text-align: left;">
+                                <p style="margin: 0; font-size: 25px;">숙박업소 이름</p>
+                                <p style="margin: 0; font-size: 15px;">5.0</p>
+                                <p style="margin: 0; font-size: 19px;">강남구</p>
+                            </div>
+
+                            <div class="mainviewprice">
+                                <p style="margin: 0; font-size: 25px;">89,500</p>
+                            </div>
+
+                        </div>
+                    </li>
+                </div>
+            </div>
+        </section>
+
+
+
+
+        <footer class="mainfooter">
+            <div class="container">
+                <div class="footercontent">
+                    <div class="col-md-6 col-sm-12">
+                        <div class="footer">
+                            <a href="#"><img src="img/logo.svg" alt="부3" width="20"></a>
+                            대표자 : 5조 | E-MAIL : null<br />
+                            개인정보보호책임자 : 5조 | <br />
+                            주소 : 서울시 강남구 IT_BANK
+
+                            <address>©Bootstrap. ALL RIGHTS RESERVED</address>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-sm-12">
+                        <ul class="footer-menu text-right">
+                            <li><a href="#">이용약관</a></li>
+                            <li><a href="#">고객센터</a></li>
+                            <li><a href="#">개인정보 취급방침</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </body>
+
+</html>
