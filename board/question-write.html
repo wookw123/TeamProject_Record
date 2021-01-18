@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,47 +11,11 @@
     <link rel="stylesheet" href="css/style.css">
 
     <style type="text/css">
-        .write-wrap{
-            height: 600px;
-            margin: 10px auto;
-            width: 100%;
-            border: 1px solid #e1e1e1;
-            
-            
-        }
-        .write-box{
-            height: 100%;
-            width: 100%;
-            margin: auto;
-            text-align: center;
-            
-            
-        }
-        .write-box th{
-            text-align: right ;
-            font-size: 20px;
-            
-        }
-
-        .write-box input{
-            width: 60%;
-            height: 30%;
-            font-size: 20px;
-        }
-        .write-box textarea{
-            width: 60%;
-            height: 100%;
-        }
-        
       
-        .write-button{
-            padding-bottom: 50px;
-        }
-        .write-box td, .write-box th{}
-
-        
+    
     </style>
 </head>
+
 <body>
     <section>
         <div class="container">
@@ -59,33 +24,45 @@
                     <p>질문작성</p>
                 </div>
                 <div class="write-wrap">
-                    <table class="write-box">
-                        <tr>
-                            <th>아이디</th>
-                            <td><input type="text"></td>
-                        </tr>
-                        <tr>
-                            <th>비밀번호</th>
-                            <td><input type="password"></td>
-                        </tr>
-                        <tr>
-                            <th>제목</th>
-                            <td><input type="text"></td>
-                        </tr>
-                        <tr>
-                            <th>내용</th>
-                            <td><textarea></textarea></td>
-                        </tr>
+                    <div class="write-box">
+                        <div class="write-title">
+                            <dl>
+                                <dt class="title-dt">제목</dt>
+                                <dd><input type="text" placeholder="제목입력"></dd>
+                            </dl>
+                        </div>
+                        <div class="write-info">
+                            <dl>
+                                <dt class="info-dt">내용</dt>
+                            </dl>
+                        </div>
+                        <!-- <div class="write-info">
+                            <dl>
+                                <dt>아이디</dt>
+                                <dd><input type="text" placeholder="사용자아이디"></dd>
+                            </dl>
+                            <dl>
+                                <dt>비밀번호</dt>
+                                <dd><input type="password" placeholder="비밀번호입력"></dd>
+                            </dl>
+                        </div>
+                        </div> -->
+                        <div class="write-content">
+                            <textarea placeholder="내용입력"></textarea>
 
-                    </table>
-                      
-                </div>
-                <div class="write-button">
-                    <button type="button" class="btn btn-info">게시글 등록</button>
-                    <button type="button" class="btn btn-info">목록</button>
+                        </div>
+
+                        <div class="write-button">
+                            <button type="button" class="btn btn-info">게시글 등록</button>
+                            <button type="button" class="btn btn-info">목록</button>
+                        </div>
+                    </div>
                 </div>
             </div>
+
+        </div>
         </div>
     </section>
 </body>
+
 </html>

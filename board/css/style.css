@@ -4,6 +4,7 @@
 }
 section {
 	margin-top: 50px;
+	margin-bottom: 50px;
 }
 
 .board-title{
@@ -220,4 +221,109 @@ section {
 .end{
 	padding: 20px;
 }
+
+/* write */
+.write-wrap {
+	border: 1px solid black;
+	padding-bottom: 20px;
+}
+
+.write-title,
+.write-info {
+	padding: 15px;
+
+}
+
+
+.write-title {
+	border-top: 1px solid #e1e1e1;
+	border-left: 1px solid #e1e1e1;
+	border-right: 1px solid #e1e1e1;
+}
+
+.write-info {
+	border-left: 1px solid #e1e1e1;
+	border-right: 1px solid #e1e1e1;
+}
+
+.write-info {
+	border-top: 1px dashed #e1e1e1;
+	border-bottom: 1px solid #e1e1e1;
+	font-size: 0;
+}
+
+.write-content {
+	border: solid 1px #e1e1e1;
+}
+
+.write-content textarea {
+	display: block;
+	width: 100%;
+	height: 300px;
+	padding: 35px;
+	box-sizing: border-box;
+	border: 0;
+	resize: none;
+	overflow: auto;
+	font-size: x-large;
+}
+
+.write-title .title-dt {
+
+	width: 20%;
+}
+
+.write-info dl {
+	margin: 10px 0px;
+	display: inline-block;
+	width: 50%;
+	vertical-align: middle;
+
+}
+
+.write-title dt,
+.write-info dt {
+	width: 100px;
+}
+
+.write-title dl {
+	margin-top: 10px;
+	margin-bottom: 10px;
+	font-size: 0;
+}
+
+.write-title input {
+	font-size: large;
+	width: 150%;
+	height: 50px;
+}
+
+.write-content {
+	padding: 25px;
+}
+
+.title-dt {
+	text-align: center;
+}
+
+.write-title dt,
+.write-title dd,
+.write-info dt,
+.write-info dd {
+	display: inline-block;
+	vertical-align: middle;
+	font-size: large;
+	width: 50%;
+}
+
+.write-box {
+	
+	padding: 40px;
+}
+
+.info-dt {
+	position: relative;
+	left: 17%;
+}
+
 
