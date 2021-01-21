@@ -5,15 +5,25 @@ a,
 p {
   list-style: none;
   text-decoration: none;
+  
 }
+
+a:link { color: rgb(0, 0, 0); text-decoration: none;}
+a:visited { color: rgb(0, 0, 0); text-decoration: none;}
+a:hover { color: rgb(247, 132, 0); text-decoration: none;}
+
+.nav>li>a:focus, .nav>li>a:hover {
+  text-decoration: none;
+  background-color: #ead0b800;  
+}
+
+
 
 img {
   max-width: 100%;
   height: auto;
 }
 
-body {
-}
 
 /* ============== 헤더 ================= */
 
@@ -24,6 +34,47 @@ body {
     margin-top: 30px;
     margin-left: 25px;
   }
+}
+@media(max-width: 766px){
+
+  .topmenu {
+    /*상단 메뉴*/
+  
+    margin-top: 10px;
+    font-size: 25px;
+    background-color: #ffdab8;
+    text-align: center;
+  } 
+
+  .nav>li {
+    position: relative;
+    display: block;
+    padding: 10px;
+}
+
+}
+
+@media(max-width: 766px){
+
+  .topmenubtn {
+    /*상단 메뉴 버튼*/
+  
+    margin-top: 25px;
+    font-size: 20px;
+    background-color:#ead0b8 ;
+  }
+
+}
+
+@media (min-width : 767px){
+.topmenu {
+  /*상단 메뉴*/
+
+  margin-top: 25px;
+  font-size: 20px;
+  background-color:#ead0b8 ;
+  color: white;
+}
 }
 
 .title {
@@ -44,12 +95,7 @@ body {
   height: 100px;
 }
 
-.topmenu {
-  /*상단 메뉴*/
 
-  margin-top: 25px;
-  font-size: 20px;
-}
 
 .search {
   /*입력창 위치*/
@@ -201,6 +247,7 @@ body {
   margin-top: 40px;
   background-color: rgb(156, 133, 120);
   height: 150px;
+  bottom: 0;
 }
 
 .footercontent {
